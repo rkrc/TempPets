@@ -2,45 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="ca.krpeletric.temppets.MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/splashScreenBG"
-        android:src="@mipmap/ic_tina"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text=" "
-        android:id="@+id/alignmentcentre"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="138dp"
-        android:visibility="invisible"
-        android:singleLine="true" />
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/temppets">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/alignmentcentre"
-        android:layout_alignRight="@+id/splashScreenBG"
-        android:layout_alignEnd="@+id/splashScreenBG"
-        android:id="@+id/relativeLayout">
+        android:id="@+id/relativeLayout"
+        android:visibility="visible"
+        android:layout_alignBottom="@+id/alignmentcentre">
 
         <TextView
             android:layout_width="fill_parent"
@@ -48,26 +27,50 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="app name here"
             android:id="@+id/appNameTextField"
-            android:layout_centerVertical="true"
+            android:textColor="#ff0101"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="@dimen/abc_text_size_display_3_material"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/relativeLayout">
+        android:visibility="visible"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignRight="@+id/alignmentcentre"
+        android:layout_alignEnd="@+id/alignmentcentre">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="slogan here"
+            android:text="Loan before you Own"
             android:id="@+id/sloganTextField"
+            android:textAlignment="gravity"
+            android:textColor="#04361e"
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:textStyle="bold|normal|italic"
+            android:typeface="monospace"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=" gfhgjklhgf"
+        android:id="@+id/alignmentcentre"
+        android:visibility="invisible"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp" />
 
 </RelativeLayout>
